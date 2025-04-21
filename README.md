@@ -1,9 +1,18 @@
 My Hyprland configuration
 
+You need:
+swww, waypaper - wallpapers
+wofi - app launcher
+kitty - terminal app
+to delete apps configs you dont need
+
 There already are:
 Hotkeys
 wallpaper engine
 windows rules
 
 My plans:
-later:)
+Clear up the configs
+Waybar configs
+Light music player
+widgets?
