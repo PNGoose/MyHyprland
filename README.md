@@ -1,6 +1,6 @@
-My Hyprland configuration
-
-You need:
+h2 My Hyprland configuration
+---
+h3 You need:
 swww, waypaper - wallpapers
 wofi - app launcher
 kitty - terminal app
