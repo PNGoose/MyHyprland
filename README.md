@@ -5,7 +5,7 @@ swww, waypaper - wallpapers
 wofi - app launcher
 kitty - terminal app
 to delete apps configs you dont need
-
+---
 There already are:
 Hotkeys
 wallpaper engine
