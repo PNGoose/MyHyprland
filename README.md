@@ -2,7 +2,6 @@
 ---
 ## You need:
 swww, waypaper - wallpapers
-***
 wofi - app launcher
 
 kitty - terminal app
