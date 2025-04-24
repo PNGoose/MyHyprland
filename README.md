@@ -31,5 +31,6 @@ Just put config file to /home/[name]/.config/hypr
 ## My plans:
 * Clear up the configs
 * Waybar configs
+* script to fast create .desktop files
 * Light music player
 * File manager
