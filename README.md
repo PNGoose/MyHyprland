@@ -2,6 +2,8 @@
 A configuration that can help you 
 to use comfortable and stylish dynamic
 window manager Hyprland
+* Hyprland is a dynamic window manager use wayland
+* You can read docs here: https://hyprland.org/
 
 ## To basic work you need:
 * swww, waypaper - wallpapers
