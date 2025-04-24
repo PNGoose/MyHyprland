@@ -1,10 +1,10 @@
 # My Hyprland configuration
 ---
 ## You need:
-swww, waypaper - wallpapers
-wofi - app launcher
+* swww, waypaper - wallpapers
+* wofi - app launcher
+* kitty - terminal app
 
-kitty - terminal app
 ---
 to delete apps configs you dont need
 ---
