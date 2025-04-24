@@ -28,7 +28,7 @@ Just put config file to /home/[name]/.config/hypr
 * SUPER+SHIFT+D - open special screen
 
 ---
-### My plans:
+### My plans?:
 * Clear up the configs
 * Waybar configs
 * script to fast create .desktop files
