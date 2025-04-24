@@ -5,10 +5,15 @@ window manager Hyprland
 * Hyprland is a dynamic window manager use wayland
 * You can read docs here: https://hyprland.org/
 
+## How to use config?
+Just put config file to /home/[name]/.config/hypr
+
+
 ## To basic work you need:
 * swww, waypaper - wallpapers
 * wofi - app launcher
 * kitty - terminal app
+* chromium - internet browser
 
 ---
 ## What can you use:
@@ -19,10 +24,12 @@ window manager Hyprland
 * SUPER+C - stop app
 * SUPER+Z - fullscreen
 * SUPER+V - on/off floting
+* SUPER+D - add window to special screen
+* SUPER+SHIFT+D - open special screen
 
 ---
 ## My plans:
 * Clear up the configs
 * Waybar configs
 * Light music player
-* widgets?
+* File manager
