@@ -16,7 +16,7 @@ Just put config file to /home/[name]/.config/hypr
 * chromium - internet browser
 
 ---
-## What can you use:
+### What can you use now:
 * SUPER+Q - start terminal
 * SUPER+SHIFT+Q - open waypaper
 * SUPER+SHIFT+W - random image to wallpaper
@@ -28,7 +28,7 @@ Just put config file to /home/[name]/.config/hypr
 * SUPER+SHIFT+D - open special screen
 
 ---
-## My plans:
+### My plans:
 * Clear up the configs
 * Waybar configs
 * script to fast create .desktop files
