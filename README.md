@@ -15,9 +15,9 @@ Just put config file to /home/[name]/.config/hypr
 * kitty - terminal app
 * chromium - internet browser
 
-->sudo pacman -S kitty hyprland chromium
-->yay -S wofi swww waypaper
+>sudo pacman -S kitty hyprland chromium
 
+>yay -S wofi swww waypaper
 ---
 ### What can you use now:
 * SUPER+Q - start terminal
