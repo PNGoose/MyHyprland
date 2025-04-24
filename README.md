@@ -34,7 +34,11 @@ Just put config file to /home/[name]/.config/hypr
 ---
 ### My plans?:
 * Clear up the configs
-* Waybar configs
+* Rewrite waybar and wofi configs
 * script to fast create .desktop files
 * Light music player
 * File manager
+
+---
+_My great Thanks to Internet heroes that inspired me to create repository. 
+So I dont remember your names, but You helped me to understand how it works_
