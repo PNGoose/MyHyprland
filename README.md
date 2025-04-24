@@ -16,6 +16,7 @@ Just put config file to /home/[name]/.config/hypr
 * chromium - internet browser
 
 >sudo pacman -S kitty hyprland chromium
+***
 >yay -S wofi swww waypaper
 
 ---
