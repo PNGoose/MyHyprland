@@ -1,12 +1,23 @@
 # My Hyprland configuration
-A configuration that can help you 
-to use comfortable and stylish dynamic
-window manager Hyprland
-* Hyprland is a dynamic window manager based on wayland
-* You can read docs here: https://hyprland.org/
+A configuration that can help you to use Hyprland without long configurations. Just install, put these configs and use.<br>
+Hyprland is a dynamic window manager based on wayland<br>
+You can read Hyprland docs here: https://hyprland.org/
+<br>
 
 Preview:
-<img src="screen.png" alt="альтернативный текст">
+<img src="screen.png" alt="meow">
+
+## Why Hyprland?
+For me: 
+* It has a full documetaries for their configuration
+* It has a live reloading config
+* It is a **_dynamic_** window manager
+* It has a beautiful effects
+* It just is popular. You can find a lot of solves of troubles in Internet
+* It works on wayland (I just believe it is better than xorg lol)
+
+## Is there is some problems?
+Suddenly, yes. I have a trouble with _nvidia-utils_ package problems...
 
 ## How to use config?
 Just put config calalogs to /home/[name]/.config/
@@ -14,7 +25,7 @@ Just put config calalogs to /home/[name]/.config/
 git clone https://github.com/PNGoose/MyHyprland
 cd MyHyprland
 cp hypr ~/.config
-cp rofi ~/.config
+cp wofi ~/.config
 ```
 
 
@@ -23,6 +34,8 @@ cp rofi ~/.config
 * wofi - app launcher
 * kitty - terminal app
 * chromium - internet browser
+* hyprshot - screenshoter
+
 
 ```bash
 sudo pacman -S kitty hyprland chromium
