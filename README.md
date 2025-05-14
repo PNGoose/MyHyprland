@@ -2,11 +2,20 @@
 A configuration that can help you 
 to use comfortable and stylish dynamic
 window manager Hyprland
-* Hyprland is a dynamic window manager use wayland
+* Hyprland is a dynamic window manager based on wayland
 * You can read docs here: https://hyprland.org/
 
+Preview:
+<img src="screen.png" alt="альтернативный текст">
+
 ## How to use config?
-Just put config file to /home/[name]/.config/hypr
+Just put config calalogs to /home/[name]/.config/
+```bash
+git clone https://github.com/PNGoose/MyHyprland
+cd MyHyprland
+cp hypr ~/.config
+cp rofi ~/.config
+```
 
 
 ## To basic work you need:
