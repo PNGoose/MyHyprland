@@ -16,9 +16,6 @@ For me:
 * It just is popular. You can find a lot of solves of troubles in Internet
 * It works on wayland (I just believe it is better than xorg lol)
 
-## Is there is some problems?
-Suddenly, yes. I have a trouble with _nvidia-utils_ package problems...
-
 ## How to use config?
 Just put config calalogs to /home/[name]/.config/
 ```bash
@@ -35,14 +32,16 @@ cp wofi ~/.config
 * kitty - terminal app
 * chromium - internet browser
 * hyprshot - screenshoter
+Of course you can choose your apps and change it in config!<br>
+As for wallpapers, they are chosen from ~/Pictures/Wallpapers<br>
 
-
+<br>On Arch Linux and Arch-Based: 
 ```bash
 sudo pacman -S kitty hyprland chromium
 yay -S wofi swww waypaper
 ```
----
-### What can you use now:
+
+## You can use:
 * SUPER+Q - start terminal
 * SUPER+SHIFT+Q - open waypaper
 * SUPER+SHIFT+W - random image to wallpaper
@@ -53,8 +52,7 @@ yay -S wofi swww waypaper
 * SUPER+D - add window to special screen
 * SUPER+SHIFT+D - open special screen
 
----
-### My plans?:
+## My plans?:
 * Clear up the configs
 * Rewrite waybar and wofi configs
 * script to fast create .desktop files
