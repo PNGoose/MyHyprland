@@ -4,10 +4,14 @@ Hyprland is a dynamic window manager based on wayland<br>
 You can read Hyprland docs here: https://hyprland.org/
 <br>
 
-Preview:
-<img src="pic.png" alt="meow">
-<img src="spec.png" alt="meow">
-<img src="tile.png" alt="meow">
+### Preview:
+#### Float windows
+<img src="pic.png" alt="meow"> <br>
+#### Special screen
+<img src="spec.png" alt="meow"> <br>
+#### Window tiling
+<img src="tile.png" alt="meow"> <br>
+###### _recursion hd_
 
 ## Why Hyprland?
 For me: 
@@ -51,8 +55,8 @@ yay -S wofi swww waypaper
 * SUPER+C - stop app
 * SUPER+Z - fullscreen
 * SUPER+V - on/off floting
-* SUPER+D - add window to special screen
-* SUPER+SHIFT+D - open special screen
+* SUPER+SHIFT+D - add window to special screen
+* SUPER+D - open special screen
 
 ## My plans?:
 * Clear up the configs
