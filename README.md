@@ -5,7 +5,9 @@ You can read Hyprland docs here: https://hyprland.org/
 <br>
 
 Preview:
-<img src="screen.png" alt="meow">
+<img src="pic.png" alt="meow">
+<img src="spec.png" alt="meow">
+<img src="tile.png" alt="meow">
 
 ## Why Hyprland?
 For me: 
