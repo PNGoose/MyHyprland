@@ -59,7 +59,7 @@ yay -S wofi swww waypaper
 * SUPER+D - open special screen
 
 ## My plans?:
-* Clear up the configs
+* Clear up the configs code
 * Rewrite waybar and wofi configs
 * script to fast create .desktop files
 * Light music player
