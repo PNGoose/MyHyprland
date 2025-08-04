@@ -1,27 +1,27 @@
 {
 	//left side modules i used
-    "custom/arch": {
-        "format": "⮝",
-        "on-click": "wofi --show drun",
-        "tooltip": true,
-        "tooltip-format": "⮝ btw"
-    },
+	"custom/arch": {
+	        "format": "⮝",
+	        "on-click": "wofi --show drun",
+	        "tooltip": true,
+	        "tooltip-format": "⮝ btw"
+	},
 
-    "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 20
-        },
-        "on-click-middle": "acpi -i",
-        "format": "{icon}  {capacity}%",
-        "format-full": "{icon}  {capacity}%",
-        "format-charging": "  {capacity}%",
-        "format-plugged": "  {capacity}%",
-        "format-alt": "{time}  {icon}",
-        "format-icons": ["", "", "", "", ""]        
-    },
+	"battery": {
+	        "states": {
+	            "warning": 30,
+	            "critical": 20
+	        	},
+	        "on-click-middle": "acpi -i",
+	        "format": "{icon}  {capacity}%",
+	        "format-full": "{icon}  {capacity}%",
+	        "format-charging": "  {capacity}%",
+	        "format-plugged": "  {capacity}%",
+	        "format-alt": "{time}  {icon}",
+	        "format-icons": ["", "", "", "", ""]        
+	},
 	
-    "power-profiles-daemon": {
+	"power-profiles-daemon": {
 		"format": "{icon}",
 		"tooltip-format": "Power profile: {profile}\nDriver: {driver}",
 		"tooltip": true,
@@ -30,23 +30,23 @@
 		"performance": "",
 		"balanced": "",
 		"power-saver": ""
-	}
+		}
 	},
 
-    "hyprland/workspaces": {
-        "disable-scroll": false,
-        "all-outputs": true,
-        "warp-on-scroll": true,
-        "format": "{name}",
-        "format-icons": {
-            "urgent": "",
-            "active": "",
-            "default": "",
-        "exec": "hyprctl clients -w -f"
-        }
-    },
+	"hyprland/workspaces": {
+	        "disable-scroll": false,
+	        "all-outputs": true,
+	        "warp-on-scroll": true,
+	        "format": "{name}",
+	        "format-icons": {
+	            "urgent": "",
+	            "active": "",
+	            "default": "",
+	        "exec": "hyprctl clients -w -f"
+	        }
+	},
 
-    "mpris": {
+	"mpris": {
 		"max-length": 30,
 		"interval": 10,
 		"format": "  <i>{dynamic}</i>", // or {player-icon}
@@ -62,34 +62,32 @@
 		"status-icons": {"paused": "󰐎", "playing": "", "stopped": ""}
 	},
 
-    "custom/cava": {
+	//center modules i used
+	"clock": {
+	        "format": "{:%H:%M} ",
+	        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+	        "format-alt": "{:%d-%m-%Y}"
+    	},
+	
+	"custom/cava": {
 		"exec": "$HOME/.config/waybar/WaybarCava.sh",
 		"format": "{}",
 		"passtrough": true
 	},
 
+	//right side modules i used
+	"pulseaudio": {
+	        "format": "{icon}  {volume}%",
+	        "format-bluetooth": "{icon} {volume}%  {format_source}",
+	        "format-bluetooth-muted": " {icon} {format_source}",
+	        "format-muted": " {format_source}",
+	        "format-source": " {volume}%",
+	        "format-source-muted": "",
+	        "format-icons": {"headphone": "", "default": ["", "", ""]},
+	        "on-click": "pavucontrol"
+    	},
 
-	//center modules i used
-	"clock": {
-        "format": "{:%H:%M} ",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%d-%m-%Y}"
-    },
-
-
-    //right side modules i used
-    "pulseaudio": {
-        "format": "{icon}  {volume}%",
-        "format-bluetooth": "{icon} {volume}%  {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": "",
-        "format-icons": {"headphone": "", "default": ["", "", ""]},
-        "on-click": "pavucontrol"
-    },
-
-    "pulseaudio#microphone": {
+	"pulseaudio#microphone": {
 		"format": "{format_source}",
 		"format-source": " {volume}%",
 		"format-source-muted": "",
@@ -101,7 +99,7 @@
 		"scroll-step": 5,
 	},
 
-    "network": {
+	"network": {
 		"format": "{ifname}",
 		"format-wifi": "{icon}",
 		"format-ethernet": "󰌘",
@@ -116,11 +114,11 @@
 		"on-click-right": "kitty iwctl"
 	},
     
-    "hyprland/language": {
-       "format": "  {}",
-       "format-en": "EN",
-       "format-ru": "RU"
-    },
+	"hyprland/language": {
+       		"format": "  {}",
+	       	"format-en": "EN",
+	        "format-ru": "RU"
+    	},
 
 	"backlight": {
 		"interval": 2,
@@ -139,27 +137,30 @@
 		"smooth-scrolling-threshold": 1
 	},
 
-	//modules that i didnt use but you can use if you like it
+	//modules that i didnt use but someone like it/you know what you need
 	"tray": {
 		"icon-size": 20,
 		"spacing": 4
 	},
+	
 	"cpu": {
-        "format": "  {usage}%",
-        "tooltip": true,
-        "on-click": "kitty htop &"
-    },
-    "temperature": {
-        "interval": 10,
-        "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
-        "critical-threshold": 100,
-        "format-critical": " {temperatureC}",
-        "format": " {temperatureC}°C"
-    },
-    "memory": {
-        "format": "  {}%",
-		"tooltip": true,
-		"on-click": "gnome-disks &"
-    },
+	        "format": "  {usage}%",
+	        "tooltip": true,
+	        "on-click": "kitty htop &"
+	},
+	
+	"temperature": {
+	        "interval": 10,
+	        "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
+	        "critical-threshold": 100,
+	        "format-critical": " {temperatureC}",
+	        "format": " {temperatureC}°C"
+    	},
+	
+	"memory": {
+	        "format": "  {}%",
+			"tooltip": true,
+			"on-click": "gnome-disks &"
+    	},
 }
 
