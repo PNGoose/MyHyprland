@@ -1,0 +1,47 @@
+[
+    {
+        "name": "base",
+        "layer": "top", 
+        "position": "top", 
+        "height": 34,
+        "width": 1900, 
+        "spacing": 2,
+        "margin": "0 0 0 0",
+        "modules-left": [
+            "custom/arch",
+            "hyprland/workspaces",
+            //"custom/search",
+            //"cpu",
+            //"memory",
+            //"temperature",
+            "power-profiles-daemon",
+            "battery",
+            "mpris"
+            ],
+
+        "modules-center": ["clock"],
+
+        "modules-right": [
+            "pulseaudio",
+            "network",
+            "backlight",
+            "hyprland/language"
+            ],
+        "include": ["~/.config/waybar/modules.json"]
+    },
+    {
+        "name": "overlay",
+        "height": 34,
+        "width": 1900,
+
+        // i had some problem with `"mode" : "overlay"` so i use these properties
+        "layer": "bottom",
+        "position": "top", 
+        "margin-top": -34,
+        "exclusive": false,
+        "passtrough": true,
+
+        "modules-center": ["custom/cava"],
+        "include": ["~/.config/waybar/modules.json"]
+    },
+]
