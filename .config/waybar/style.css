@@ -1,0 +1,157 @@
+@import "mocha.css";
+* {
+    /* `otf-font-awesome` and SpaceMono Nerd Font are required to be installed for icons */
+    font-family: "ttf-ms-win10-auto";
+    font-size: 15px;
+}
+window#waybar.overlay {
+    background-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+}
+window#waybar {
+    background: transparent;
+    color: @teal;
+    border-radius: 4rem;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-bottom-color: @teal;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+    padding: 0px;
+    border: 0px;
+}
+
+#cpu,#memory,#disk,#temperature,#network,
+#pulseaudio,#tray,#bluetooth, #language,#mpd {
+	background-color: transparent;
+    padding: 0 6px;
+    border-radius: 4rem;
+}
+
+#clock {
+    font-weight: bold;
+    text-shadow: 
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black;;
+    color: @teal;
+}
+
+#backlight, #power-profiles-daemon, #battery, #language {
+    color: @red;
+} 
+
+#clock:hover,#battery:hover,#cpu:hover,#memory:hover,#disk:hover,#tray:hover,
+#temperature:hover,#backlight:hover,#network:hover,#pulseaudio:hover,
+#bluetooth:hover,#idle_inhibitor:hover,#language:hover{
+    background-color: @maroon;
+    color: @brown;
+    border-radius: 4rem;
+}
+
+
+#workspaces {
+  border-radius: 7rem;
+  background-color: transparent;
+  /*border-width: 2px;
+  border-style: solid;
+  border-color: @teal;*/
+}
+
+#workspaces button {
+  color: @teal;
+  border-radius: 7rem;
+}
+
+#workspaces button.active {
+  color: @brown;
+  background-color: @teal;
+  border-radius: 7rem;
+}
+
+#workspaces button:hover {
+  color: @brown;
+  background-color: @maroon;
+  border-radius: 7rem;
+}
+
+#custom-arch {
+    margin-left: 5px;
+    padding: 0 10px;
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 7rem;
+}
+#custom-arch:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+#pulseaudio-slider slider {
+	min-width: 0px;
+	min-height: 0px;
+	opacity: 0;
+	background-image: none;
+	border: none;
+	box-shadow: none;
+}
+
+#pulseaudio-slider trough {
+	min-width: 80px;
+	min-height: 5px;
+	border-radius: 5px;
+}
+
+#pulseaudio-slider highlight {
+	min-height: 10px;
+	border-radius: 5px;
+}
+
+#backlight-slider slider {
+	min-width: 0px;
+	min-height: 0px;
+	opacity: 0;
+	background-image: none;
+	border: none;
+	box-shadow: none;
+}
+
+#backlight-slider trough {
+	min-width: 80px;
+	min-height: 10px;
+	border-radius: 5px;
+}
+
+#backlight-slider highlight {
+	min-width: 10px;
+	border-radius: 5px;
+}
+
+
+#mpris {
+    color: @red;
+    border-radius: 7rem;
+    background-color: transparent;
+    padding: 0 10px;
+    /*border-width: 2px;
+    border-style: solid;
+    border-color: @teal;*/
+}
+#mpris:hover {
+    background-color: @maroon;
+    color: @brown;
+}
+
+#custom-cava{
+    text-shadow: 
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black,
+        0 0 2px black;;
+	color: @red;
+}
+
