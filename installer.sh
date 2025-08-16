@@ -4,6 +4,6 @@ exec git clone https://aur.archlinux.org/yay ~/
 cd ~/yay
 exec makepkg -si
 cd 
-yay -S mpc-qt waypaper hyprnotify hyprpaper
+exec yay -S mpc-qt waypaper hyprnotify hyprpaper
 
-exec git clone https://github.com/PNGoose/MyHyprland ~/.config/
+cp -r ~/MyHyprland/.config ~/.config
