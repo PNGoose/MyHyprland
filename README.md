@@ -1,3 +1,5 @@
+#(rewriting now)
+
 # My Hyprland configuration
 A configuration that can help you to use Hyprland without long configurations. Just install, put these configs and use.<br>
 Hyprland is a dynamic window manager based on wayland<br>
