@@ -1,68 +1,53 @@
-#(rewriting now)
+A compilation of configs for me.
 
-# My Hyprland configuration
-A configuration that can help you to use Hyprland without long configurations. Just install, put these configs and use.<br>
-Hyprland is a dynamic window manager based on wayland<br>
-You can read Hyprland docs here: https://hyprland.org/
-<br>
+## Preview
+ [showcase_video](https://github.com/PNGoose/MyHyprland/blob/main/showcase/showcase.mp4)
 
-### Preview:
-#### Float windows
-<img src="pic.png" alt="meow"> <br>
-#### Special screen
-<img src="spec.png" alt="meow"> <br>
-#### Window tiling
-<img src="tile.png" alt="meow"> <br>
-###### _recursion hd_
+### What's here?
+##### There are configs for:
+- Hyprland - a Wayland window compositor that I manually configured for me. It is configured to have interesting view and have useful hotkeys to things I use frequently.
 
-## Why Hyprland?
-For me: 
-* It has a full documetaries for their configuration
-* It has a live reloading config
-* It is a **_dynamic_** window manager
-* It has a beautiful effects
-* It just is popular. You can find a lot of solves of troubles in Internet
-* It works on wayland (I just believe it is better than xorg lol)
+- Waybar - a bar for Wayland compositors. I compiled it from some others bars [bar1](https://gitlab.com/saibhargav/arch-hyprland-custom0) and [bar2](https://github.com/Alexays/Waybar/wiki/Examples). In this config you can see disabled modules that you can try.
 
-## How to use config?
-Just put config calalogs to /home/[name]/.config/
+- Kitty - it is terminal Emulator. I just configured it for Catppuccin frappe. You can change it by
 ```bash
-git clone https://github.com/PNGoose/MyHyprland
-cd MyHyprland
-cp hypr ~/.config
-cp wofi ~/.config
+kitty +kitten themes
 ```
 
+- Wofi - launcher. I dont sure right now i need it but it is used.  I want reconfigure it but I dont know what i have to see. *It **will** be changed sometime*
 
-## To basic work you need:
-* swww, waypaper - wallpapers
-* wofi - app launcher
-* kitty - terminal app
-* chromium - internet browser
-* hyprshot - screenshoter
-Of course you can choose your apps and change it in config!<br>
-As for wallpapers, they are chosen from ~/Pictures/Wallpapers<br>
+##### So also you have to install
+- swww and waypaper - wallpaper engine and GUI for it.
+- nwg-look - a GUI to change themes, icon packs, fonts if you need it
+- hyprshot - screenshoter 
+- spiceitify - a spotify customization tool
+- mako - a notifies thing...
 
-<br>On Arch Linux and Arch-Based: 
+#### **There is automatic installer but it is not tested right now**
+To install this setup do **these** commands, it use yay but you can compile manually or with paru:
+*it is mostly for me because sometimes i reinstall and always forget to install something important*
 ```bash
-sudo pacman -S kitty hyprland chromium
-yay -S wofi swww waypaper
+ sudo pacman -Sy
+ sudo pacman -S git nvidia nvidia-utils xdg-desktop-portal-wlr chromium spotify-launcher hyprland wofi waybar kitty cava ollama zsh thunar libreoffice swwww mako fastfetch mako htop obs-studio cmus yazi gdu bluetui power-profiles-daemon brightnessctl
+ git clone https://aur.archlinux.org/yay ~/
+ cd yay
+ makepkg -si
+ yay -S mpc-qt spicetify waypaper hyprpaper
+ sudo chsh /bin/zsh
+ git clone https://github.com/PNGoose/MyHyprland ~/
+ cd ~/MyHyprland
+ cp .config ~/.config/
+ cp .zshrc ~/
 ```
 
-## You can use:
-* SUPER+Q - start terminal
-* SUPER+SHIFT+Q - open waypaper
-* SUPER+SHIFT+W - random image to wallpaper
-* SUPER+E - start app launcher
-* SUPER+C - stop app
-* SUPER+Z - fullscreen
-* SUPER+V - on/off floting
-* SUPER+SHIFT+D - add window to special screen
-* SUPER+D - open special screen
+##### Also as a bonus there are some wallpapers that I found in the Internet
+ Links:
+- [waybar-dots](https://github.com/Alexays/Waybar)
+- [hypr-themes](https://www.reddit.com/r/hyprland/comments/1h1btro/any_good_hyprland_themes/)
 
-## My plans?:
-* Clear up the configs code
-* Rewrite waybar and wofi configs
-* script to fast create .desktop files
-* Light music player
-* File manager
+And plans:
+- [x] Clear up the configs code
+- [x] Rewrite waybar configs
+- [ ] Do something with launcher
+- [ ] sort .desktop files
+- [x] Light music player
